@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!-- lang="vi" khai báo ngôn ngữ trang → hỗ trợ screen reader & SEO -->
+<html lang="vi">
+
+<head>
+  <!-- ========== METADATA BẮT BUỘC ========== -->
+  <meta charset="UTF-8" />
+  <!-- viewport: nền tảng của responsive mobile-first, khóa tỉ lệ 1:1 với thiết bị -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio CV của Chu Việt Anh – Sinh viên Đại Nam. Dự án, kỹ năng và thông tin liên hệ." />
+  <meta name="author" content="Chu Việt Anh" />
+  <title>Chu Việt Anh · Sinh viên Đại Nam</title>
+
+  <!-- Liên kết tới file CSS tách rời (yêu cầu của bài) -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ========================================================== -->
+  <!-- HEADER: nhận diện + điều hướng chính                        -->
+  <!-- ========================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Thương hiệu cá nhân -->
+      <a class="brand" href="#top" aria-label="Về đầu trang">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span class="brand-name">Chu Việt Anh</span>
+      </a>
+
+      <!-- NAV dùng Flexbox (xem styles.css) -->
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================== -->
+  <!-- MAIN: toàn bộ nội dung chính của trang                      -->
+  <!-- ========================================================== -->
+  <main id="top">
+    <!-- ----- SECTION: Giới thiệu / Hero ----- -->
+    <section id="about" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Xin chào, tôi là</p>
+          <h1 class="hero-title">Chu Việt Anh</h1>
+          <p class="hero-role">Sinh viên Đại Nam</p>
+          <p class="hero-desc">
+            Tôi thích làm theo sở thích và đam mê.
+            Tốt nghiệp ngành Công nghệ thông tin, yêu thích HTML/CSS ngữ nghĩa
+            và thích khám phá.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Xem dự án</a>
+            <a class="btn btn-outline" href="#contact">Liên hệ tôi</a>
+          </div>
+        </div>
+
+        <!-- Ảnh đại diện: dùng placeholder, thay bằng ảnh thật của bạn -->
+        <figure class="hero-avatar">
+          <img
+            src="./assets/img/Steve_(Minecraft).png"
+            alt="Ảnh đại diện của Chu Việt Anh"
+            width="320" height="320" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Kỹ năng ----- -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Kỹ năng</h2>
+        <p class="section-sub">Những công nghệ và kỹ năng tôi sử dụng thường xuyên.</p>
+
+        <ul class="skill-grid">
+          <li class="skill-chip">HTML5</li>
+          <li class="skill-chip">Ruby</li>
+          <li class="skill-chip">JavaScript (ES6+)</li>
+          <li class="skill-chip">C# (C-sharp)</li>
+          <li class="skill-chip">C++</li>
+          <li class="skill-chip">GDScript</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Dự án (danh sách thẻ dùng CSS Grid) ----- -->
+    <section id="projects" class="section section-muted">
+      <div class="container">
+        <h2 class="section-title">Dự án tiêu biểu</h2>
+        <p class="section-sub">Một vài sản phẩm tôi đã thực hiện.</p>
+
+        <!-- .project-grid dùng CSS Grid (xem styles.css) -->
+        <div class="project-grid">
+
+          <!-- Mỗi thẻ là một <article> độc lập, có thể đứng riêng -->
+          <article class="card">
+            <img class="card-media"
+              src="https://rpgmakerweb.tkool.jp/banner-mobile-rpg-maker-mv.jpg"
+              alt="Ảnh minh họa dự án Rpgmaker" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Rpgmaker</h3>
+              <p class="card-desc">
+                Game Rpgmaker.
+              </p>
+              <ul class="tag-list">
+                <li>JavaScript (ES6+)</li>
+                <li>Ruby</li>
+              </ul>
+              <a class="card-link" href="https://www.rpgmakerweb.com/products/rpg-maker-mv">Xem chi tiết → </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="https://unity.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ffuvbjjlp%2Fproduction%2Fc0470bf62f8b53c3a8cbed790013000ad46a51e5-1920x1080.jpg%3Fauto%3Dformat&w=3840&q=75"
+              alt="Ảnh minh họa dự án Unity" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Ứng dụng Unity</h3>
+              <p class="card-desc">
+                Game unity.
+              </p>
+              <ul class="tag-list">
+                <li>C# (C-sharp)</li>
+              </ul>
+              <a class="card-link" href="https://unity.com/vn">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="https://cdn2.unrealengine.com/uefn-for-ue-com-06-1920x1080-17deff3276d7.png?resize=1&w=1920"
+              alt="Ảnh minh họa dự án Unreal" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Unreal</h3>
+              <p class="card-desc">
+                Game unrealengine.
+              </p>
+              <ul class="tag-list">
+                <li>C++</li>
+              </ul>
+              <a class="card-link" href="https://www.unrealengine.com/">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="https://godotengine.org/assets/showcase/cassette-beasts-3.webp"
+              alt="Ảnh minh họa dự án Godot" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Godot</h3>
+              <p class="card-desc">
+                Game Godot.
+              </p>
+              <ul class="tag-list">
+                <li>GDScript</li>
+                <li>C++</li>
+              </ul>
+              <a class="card-link" href="https://godotengine.org/">Xem chi tiết →</a>
+            </div>
+          </article>
+
+        </div><!-- /.project-grid -->
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Liên hệ ----- -->
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <h2 class="section-title">Liên hệ</h2>
+        <p class="section-sub">Mở cho các cơ hội thực tập &amp; việc làm Frontend.</p>
+
+        <ul class="contact-list">
+          <li><span class="contact-label">Email</span> <a href="mailto:anhc6138@gmail.com">anhc6138@gmail.com</a></li>
+          <li><span class="contact-label">GitHub</span> <a href="#">https://github.com/AnhChuCVA</a></li>
+          <li><span class="contact-label">Tiktok</span> <a href="#">https://www.tiktok.com/@anhchu3045</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================== -->
+  <!-- FOOTER                                                      -->
+  <!-- ========================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Chu Việt Anh. Thiết kế &amp; xây dựng bằng HTML5 + CSS3.</p>
+      <a href="#top" class="to-top">↑ Lên đầu trang</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
