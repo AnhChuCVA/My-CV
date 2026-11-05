@@ -29,7 +29,7 @@
 | 3 | Khả năng vận hành, xử lý lỗi và hiệu năng cơ bản | Cần cải thiện | Có hướng dẫn chạy bằng máy chủ tĩnh/Docker; chưa có kết quả khởi chạy, kiểm tra lỗi tài nguyên hoặc đo hiệu năng. |
 | 4 | Bảo mật, quản lý cấu hình và dữ liệu | Cần cải thiện | Website tĩnh, tài liệu không ghi nhận cấu hình bí mật; chưa có biên bản rà soát bảo mật và quyền công khai dữ liệu cá nhân. |
 | 5 | Chất lượng mã nguồn, cấu trúc repository và tài liệu bàn giao | Cần cải thiện | Có phân tách HTML/CSS và tài liệu README/release note; cần xác minh tài nguyên, liên kết và hoàn tất rà soát chất lượng. |
-| 6 | Khả năng triển khai, kiểm thử và cung cấp minh chứng | Cần cải thiện | README có hướng dẫn triển khai; chưa có kết quả chạy thử, biên bản test hoặc ảnh minh chứng trong thư mục `docs/sreenshots`. |
+| 6 | Khả năng triển khai, kiểm thử và cung cấp minh chứng | Cần cải thiện | README có hướng dẫn triển khai; chưa có kết quả chạy thử, biên bản test hoặc ảnh minh chứng trong thư mục `docs/sreenshots` |
 
 ## 3. Chi tiết kiểm tra
 
