@@ -453,3 +453,32 @@ ul {
     scroll-behavior: auto !important;
   }
 }
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+.hero-avatar {
+  position: relative;
+}
+
+.hero-avatar .avatar-default,
+.hero-avatar .avatar-hover {
+  transition: opacity 0.3s ease;
+}
+
+.hero-avatar .avatar-hover {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.hero-avatar:hover .avatar-default {
+  opacity: 0;
+}
+
+.hero-avatar:hover .avatar-hover {
+  opacity: 1;
+}
