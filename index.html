@@ -38,6 +38,17 @@
         </ul>
       </nav>
     </div>
+    <style>
+        input {
+            padding: 5px;
+            border: 1px solid lightgray;
+            border-radius: 8px;
+            outline: none !important;
+        }
+        input:focus{border-color: orange;}
+        input:user-invalid{border-color: red;}
+        input:user-valid{border-color: green;}
+    </style>
   </header>
 
   <!-- ========================================================== -->
@@ -108,7 +119,7 @@
           <!-- Mỗi thẻ là một <article> độc lập, có thể đứng riêng -->
           <article class="card">
             <img class="card-media"
-              src="https://rpgmakerweb.tkool.jp/banner-mobile-rpg-maker-mv.jpg"
+              src="./assets/img/banner-mobile-rpg-maker-mv.jpg"
               alt="Ảnh minh họa dự án Rpgmaker" width="600" height="360" />
             <div class="card-body">
               <h3 class="card-title">Rpgmaker</h3>
@@ -125,7 +136,7 @@
 
           <article class="card">
             <img class="card-media"
-              src="https://unity.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ffuvbjjlp%2Fproduction%2Fc0470bf62f8b53c3a8cbed790013000ad46a51e5-1920x1080.jpg%3Fauto%3Dformat&w=3840&q=75"
+              src="./assets/img/unity.webp"
               alt="Ảnh minh họa dự án Unity" width="600" height="360" />
             <div class="card-body">
               <h3 class="card-title">Ứng dụng Unity</h3>
@@ -141,7 +152,7 @@
 
           <article class="card">
             <img class="card-media"
-              src="https://cdn2.unrealengine.com/uefn-for-ue-com-06-1920x1080-17deff3276d7.png?resize=1&w=1920"
+              src="./assets/img/unrealengine-800x450.jpg"
               alt="Ảnh minh họa dự án Unreal" width="600" height="360" />
             <div class="card-body">
               <h3 class="card-title">Unreal</h3>
@@ -157,7 +168,7 @@
 
           <article class="card">
             <img class="card-media"
-              src="https://godotengine.org/assets/showcase/cassette-beasts-3.webp"
+              src="./assets/img/godot.webp"
               alt="Ảnh minh họa dự án Godot" width="600" height="360" />
             <div class="card-body">
               <h3 class="card-title">Godot</h3>
@@ -180,12 +191,23 @@
     <section id="contact" class="section">
       <div class="container contact-inner">
         <h2 class="section-title">Liên hệ</h2>
-        <p class="section-sub">Mở cho các cơ hội thực tập &amp; việc làm Frontend.</p>
-
+        <p class="section-sub">Hân hạnh được làm quen &amp; cùng vui.</p>
+        
         <ul class="contact-list">
           <li><span class="contact-label">Email</span> <a href="mailto:anhc6138@gmail.com">anhc6138@gmail.com</a></li>
           <li><span class="contact-label">GitHub</span> <a href="#">https://github.com/AnhChuCVA</a></li>
           <li><span class="contact-label">Tiktok</span> <a href="#">https://www.tiktok.com/@anhchu3045</a></li>
+          <fieldset>
+        <legend>Liên hệ sau</legend>
+        <lable for="Name">Tên</lable>
+        <input type="text" required placeholder="Nhập tên">
+        <button type="submit">Gửi</button>
+        <lable for="email">Email</lable>
+        <input type="email" required placeholder="Nhập email">
+        <lable for="message">Nội dung</lable>
+        <input type="text" required placeholder="Nhập nội dung">
+        <button type="submit">Gửi</button>
+    </fieldset>
         </ul>
       </div>
     </section>
